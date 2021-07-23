@@ -127,7 +127,7 @@ def video_feed():
 
 @app.route('/login')
 def login():
-    return auth0.authorize_redirect(redirect_uri='https://thawing-island-66760.herokuapp.com/callback')
+    return auth0.authorize_redirect(redirect_uri='https://my-video-feed.herokuapp.com/callback')
 
 #http://127.0.0.1:5000/callback
 #https://thawing-island-66760.herokuapp.com/callback
@@ -137,7 +137,7 @@ def login():
 def logout():
     cap.release()
     session.clear()
-    params = {'returnTo': url_for('index', _external=True), 'client_id': 'r6U31gP9D21vR2fVOJINLRxLUzCzNlZ1'}
+    params = {'returnTo': url_for('index', _external=True), 'client_id': 'NxpoAUxjjfUOijqaeNQ15dn1MY8owpTi'}
     return redirect(auth0.api_base_url + '/v2/logout?' + urlencode(params))
 
 if __name__ == "__main__":
