@@ -40,11 +40,11 @@ oauth = OAuth(app)
 
 auth0 = oauth.register(
     'auth0',
-    client_id='r6U31gP9D21vR2fVOJINLRxLUzCzNlZ1',
-    client_secret='EZ0kGR4aAS5NoFmFjGAPKD26HfgHioRUkn9LAOpAegT-sXfHQXEcKT2lTd-SP35Y',
-    api_base_url='https://dev-p4n8cwa2.us.auth0.com',
-    access_token_url='https://dev-p4n8cwa2.us.auth0.com/oauth/token',
-    authorize_url='https://dev-p4n8cwa2.us.auth0.com/authorize',
+    client_id='NxpoAUxjjfUOijqaeNQ15dn1MY8owpTi',
+    client_secret='OixgJzBw9yFghJGV6Khe1aWeQDxIen1U5nJEuMV1smws_yoLCnQ10hk1Szejhy_9',
+    api_base_url='https://dev-wgyt7hl7.us.auth0.com',
+    access_token_url='https://dev-wgyt7hl7.us.auth0.com/oauth/token',
+    authorize_url='https://dev-wgyt7hl7.us.auth0.com/authorize',
     client_kwargs={
         'scope': 'openid profile email',
     },
