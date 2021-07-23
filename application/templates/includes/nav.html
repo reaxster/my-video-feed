@@ -1,0 +1,16 @@
+<header>
+    <nav>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="{{ url_for('index') }}" class="nav-link {% if index %}active{% endif %}">Home</a></li>
+
+            <li class="nav-item"><a href="{{ url_for('videoScreen') }}" class="nav-link {% if videoScreen %}active{% endif %}">Live feed</a></li>
+
+            <li class="nav-item"><a href="{{ url_for('login') }}" class="nav-link {% if login %}active{% endif %}">Login</a></li>
+
+            <li class="nav-item"><a href="{{ url_for('logout') }}" class="nav-link {% if logout %}active{% endif %}">Logout</a></li>
+        
+
+        </ul>
+    </nav>
+    <hr style="clear:both">
+</header>
